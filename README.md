@@ -13,6 +13,8 @@ CREATE TABLE charge_points ( id integer NOT NULL DEFAULT nextval('charge_points_
 
 ALTER SEQUENCE charge_points_seq OWNED BY charge_points.id;
 
+En el archivo ubicado en src/main/resources/application.properties se puede modificar la conexión a la base de datos como prefiera (por defecto contiene los datos utilizados para esta prueba).
+
 Posteriormiente abrir Spring Tools Suite, abrir el proyecto recién descargado y ejecutar como "Spring boot app". Luego con Postman realizar las pruebas a los distintos endpoint. Se pueden importar los siguientes curl para facilitar las pruebas con postman si lo desea.
 
 curl --location 'http://localhost:8080/chargePoints'
